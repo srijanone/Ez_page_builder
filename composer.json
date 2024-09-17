@@ -4,28 +4,12 @@
     "type": "drupal-recipe",
     "repositories": [
             {
-                "type": "vcs",
-                "url": "https://github.com/abhineshdhiman-srijan/ezcontent-block"
-            },
-            {
-                "type": "vcs",
-                "url": "https://github.com/abhineshdhiman-srijan/ezcontent-paragraphs"
-            },
-            {
-                "type": "vcs",
-                "url": "https://github.com/abhineshdhiman-srijan/ezcontent-node"
-            },
-            {
                 "type": "composer",
                 "url": "https://packages.drupal.org/8"
             },
             {
                 "type": "composer",
                 "url": "https://asset-packagist.org"
-            },
-            {
-                "type": "vcs",
-                "url": "https://gitlab.ewdev.ca/yonas.legesse/drupal-recipe-unpack.git"
             }
         ],
     "require": {
@@ -38,9 +22,9 @@
         "drupal/components": "^3.1",
         "drupal/dropzonejs": "^2.11",
         "drupal/entity_usage": "^2.0@beta",
-        "drupal/ezcontent_block": "dev-main",
-        "drupal/ezcontent_node": "dev-main",
-        "drupal/ezcontent_paragraphs": "dev-main",
+        "srijanone/ezcontent_block": "dev-main",
+        "srijanone/ezcontent_node": "dev-main",
+        "srijanone/ezcontent_paragraphs": "dev-main",
         "drupal/field_group": "^3.6",
         "drupal/fvm": "^2.0",
         "drupal/image_widget_crop": "^2.4",
