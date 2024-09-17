@@ -11,10 +11,6 @@ Provides Landing Page Builder with components
 ```bash
 composer create-project drupal/recommended-project:^10.0 pagebuilderez
 cd pagebuilderez;
-composer config repositories.ezcontent-block vcs https://github.com/abhineshdhiman-srijan/ezcontent-block
-composer config repositories.ezcontent-paragraphs vcs https://github.com/abhineshdhiman-srijan/ezcontent-paragraphs
-composer config repositories.ezcontent-node vcs https://github.com/abhineshdhiman-srijan/ezcontent-node
-composer config repositories.ez_page_builder vcs https://github.com/abhineshdhiman-srijan/ez_page_builder
 composer config repositories.drupal8 composer https://packages.drupal.org/8
 composer config repositories.asset-packagist composer https://asset-packagist.org
 composer config minimum-stability dev
@@ -36,10 +32,6 @@ composer create-project drupal/recommended-project:^10.0 pagebuilderez
 cd pagebuilderez;
 ddev config --project-type=drupal9 --docroot=web --create-docroot
 ddev start
-ddev composer config repositories.ezcontent-block vcs https://github.com/abhineshdhiman-srijan/ezcontent-block
-ddev composer config repositories.ezcontent-paragraphs vcs https://github.com/abhineshdhiman-srijan/ezcontent-paragraphs
-ddev composer config repositories.ezcontent-node vcs https://github.com/abhineshdhiman-srijan/ezcontent-node
-ddev composer config repositories.ez_page_builder vcs https://github.com/abhineshdhiman-srijan/ez_page_builder
 ddev composer config repositories.drupal8 composer https://packages.drupal.org/8
 ddev composer config repositories.asset-packagist composer https://asset-packagist.org
 ddev composer config minimum-stability dev
