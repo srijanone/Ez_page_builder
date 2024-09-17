@@ -1,0 +1,207 @@
+name: EZContent Landing Page Builder Feature
+description: 'Provides Landing Page Builder with components.'
+recipes:
+
+install:
+  - ezcontent_theme
+  - smart_trim
+  - metatag
+  - ezcontent_node
+  - simple_gmap
+  - ezcontent_paragraphs
+  - ezcontent_block
+  - block_content
+  - color_field:color_field
+  - components
+  - layout_builder_restrictions:layout_builder_restrictions
+  - layout_builder_browser:layout_builder_browser
+  - layout_library:layout_library
+  - libraries:libraries
+  - colorbox:colorbox
+  - paragraphs_previewer:paragraphs_previewer
+  - slick_paragraphs:slick_paragraphs
+  - allowed_formats:allowed_formats
+  - paragraphs_jquery_ui_accordion:paragraphs_jquery_ui_accordion
+  - webform:webform
+  - slick:slick
+  - simple_gmap:simple_gmap
+  - viewsreference:viewsreference
+  - fvm:fvm
+  - dropzonejs:dropzonejs_eb_widget
+  - media_entity_browser:media_entity_browser
+  - video_embed_field:video_embed_media
+  - blazy:blazy
+  - media_entity_slideshow:media_entity_slideshow
+  - media_entity_instagram:media_entity_instagram
+  - media_entity_twitter:media_entity_twitter
+  - image_widget_crop:image_widget_crop
+  - lb_direct_add:lb_direct_add
+
+config:
+  import:
+    ezcontent_paragraphs:
+      - core.entity_view_mode.media.gallery
+
+  actions:
+      system.theme:
+        simple_config_update:
+          default: ezcontent_theme
+      user.role.content_editor:
+        ensure_exists:
+          id: content_editor
+        grantPermissions:
+          - 'access administration pages'
+          - 'access asset_browser entity browser pages'
+          - 'access content overview'
+          - 'access contextual links'
+          - 'access files overview'
+          - 'access image_browser entity browser pages'
+          - 'access toolbar'
+          - 'administer url aliases'
+          - 'configure all landing_page node layout overrides'
+          - 'create alert_banner block content'
+          - 'create article content'
+          - 'create audio media'
+          - 'create basic block content'
+          - 'create cards block content'
+          - 'create embed_block block content'
+          - 'create hero_media_block block content'
+          - 'create image media'
+          - 'create instagram media'
+          - 'create landing_page content'
+          - 'create map_block block content'
+          - 'create media'
+          - 'create media block content'
+          - 'create page content'
+          - 'create paragraph library item'
+          - 'create referenced_cards block content'
+          - 'create social_media block content'
+          - 'create terms in tags'
+          - 'create text_block block content'
+          - 'create tweet media'
+          - 'create url aliases'
+          - 'create video media'
+          - 'delete article revisions'
+          - 'delete own article content'
+          - 'delete own audio media'
+          - 'delete own files'
+          - 'delete own image media'
+          - 'delete own instagram media'
+          - 'delete own landing_page content'
+          - 'delete own page content'
+          - 'delete own tweet media'
+          - 'delete own video media'
+          - 'delete page revisions'
+          - 'dropzone upload files'
+          - 'edit any alert_banner block content'
+          - 'edit any basic block content'
+          - 'edit any cards block content'
+          - 'edit any embed_block block content'
+          - 'edit any hero_media_block block content'
+          - 'edit any map_block block content'
+          - 'edit any media block content'
+          - 'edit any referenced_cards block content'
+          - 'edit any social_media block content'
+          - 'edit any text_block block content'
+          - 'edit own article content'
+          - 'edit own audio media'
+          - 'edit own comments'
+          - 'edit own image media'
+          - 'edit own instagram media'
+          - 'edit own landing_page content'
+          - 'edit own page content'
+          - 'edit own tweet media'
+          - 'edit own video media'
+          - 'edit paragraph library item'
+          - 'edit terms in tags'
+          - 'revert all revisions'
+          - 'view all revisions'
+          - 'view any paragraphs previewer'
+          - 'view own unpublished content'
+          - 'view the administration theme'
+
+    # When a theme is enabled in Drupal, the blocks of the existing theme are
+    # automaticaly duplicated. In our case, on standard, the theme is claro.
+    # We set the blocks we don't want to false, and alter the config of the
+    # blocks that were created.
+      block.block.ezcontent_theme_account_menu:
+        simple_config_update:
+          status: false
+
+      block.block.ezcontent_theme_breadcrumbs:
+        simple_config_update:
+          status: false
+      block.block.ezcontent_theme_content:
+        simple_config_update:
+          status: false
+
+      block.block.ezcontent_theme_help:
+        simple_config_update:
+          status: false
+
+      block.block.ezcontent_theme_main_menu:
+        simple_config_update:
+          region: primary_menu
+          weight: 0
+
+      block.block.ezcontent_theme_messages:
+        simple_config_update:
+          status: false
+
+      block.block.ezcontent_theme_page_title:
+        simple_config_update:
+          langcode: en
+          status: true
+          dependencies:
+            module:
+              - node
+            theme:
+              - ezcontent_theme
+          id: ezcontent_theme_page_title
+          theme: ezcontent_theme
+          region: content
+          weight: 0
+          provider: null
+          plugin: page_title_block
+          settings:
+            id: page_title_block
+            label: 'Page title'
+            label_display: '0'
+            provider: core
+          visibility:
+            'entity_bundle:node':
+              id: 'entity_bundle:node'
+              negate: false
+              context_mapping:
+                node: '@node.node_route_context:node'
+              bundles:
+                article: article
+                page: page
+
+      block.block.ezcontent_theme_powered:
+        simple_config_update:
+          status: false
+
+      block.block.ezcontent_theme_primary_admin_actions:
+        simple_config_update:
+          status: false
+
+      block.block.ezcontent_theme_primary_local_tasks:
+        simple_config_update:
+          status: false
+
+      block.block.ezcontent_theme_search_form_narrow:
+        simple_config_update:
+          status: false
+
+      block.block.ezcontent_theme_search_form_wide:
+        simple_config_update:
+          status: false
+
+      block.block.ezcontent_theme_secondary_local_tasks:
+        simple_config_update:
+          status: false
+
+      block.block.ezcontent_theme_syndicate:
+        simple_config_update:
+          status: false
