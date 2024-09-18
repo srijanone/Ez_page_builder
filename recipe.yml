@@ -39,8 +39,8 @@ install:
 
 config:
   import:
-    ezcontent_paragraphs:
-      - core.entity_view_mode.media.gallery
+    ezcontent_paragraphs: '*'
+    ezcontent_block: "*"
 
   actions:
       system.theme:
