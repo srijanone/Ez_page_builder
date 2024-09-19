@@ -41,6 +41,7 @@ config:
   import:
     ezcontent_paragraphs: '*'
     ezcontent_block: "*"
+    media_entity_browser: "*"
 
   actions:
       system.theme:
