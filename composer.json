@@ -10,18 +10,6 @@
         "packagist": {
             "type": "composer",
             "url": "https://asset-packagist.org"
-        },
-        "dropzonejs": {
-            "type": "package",
-            "package": {
-                "name": "enyo/dropzone",
-                "version": "5.9.3",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://github.com/dropzone/dropzone/releases/download/v5.9.3/dist.zip",
-                    "type": "zip"
-                }
-            }
         }
     },
     "require": {
@@ -66,8 +54,7 @@
         "drupal/webform": "^6.2@beta",
         "drupal/yoast_seo": "^2.0@alpha",
         "srijanone/ezcontent_theme": "^2.1",
-        "vardot/blazy": "^1.8",
-        "enyo/dropzone": "^5.9"
+        "vardot/blazy": "^1.8"
     },
     "extra": {
         "patches": {
