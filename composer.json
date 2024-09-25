@@ -2,16 +2,16 @@
     "name": "drupal_recipe/ez_page_builder",
     "description": "Provides Landing Page Builder with components",
     "type": "drupal-recipe",
-    "repositories": [
-            "drupal":        {
-                "type": "composer",
-                "url": "https://packages.drupal.org/8"
-            },
-            "packagist":     {
-                "type": "composer",
-                "url": "https://asset-packagist.org"
-            },
-           "dropzonejs":     {
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "packagist": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        "dropzonejs": {
             "type": "package",
             "package": {
                 "name": "enyo/dropzone",
@@ -23,7 +23,7 @@
                 }
             }
         }
-        ],
+    },
     "require": {
         "bower-asset/dropzone": "5.7.2",
         "bower-asset/slick-carousel": "^1.8",
@@ -60,7 +60,7 @@
         "drupal/slick_paragraphs": "^2.2",
         "drupal/smart_trim": "^2.2",
         "drupal/social_media": "^2.0",
-        "drupal/stable":"^2.1",
+        "drupal/stable": "^2.1",
         "drupal/video_embed_field": "^2.5",
         "drupal/viewsreference": "^2.0@beta",
         "drupal/webform": "^6.2@beta",
@@ -74,10 +74,10 @@
             "drupal/core": {
                 "3062441 - Error: Call to a member function getConfigDependencyName() on null": "https://www.drupal.org/files/issues/2024-03-27/3062441-patch-41.patch",
                 "3352384 -Add Exception for TypeError Argument must be String": "https://www.drupal.org/files/issues/2023-08-07/TypeError_htmlspecialchars_ArgumentNustBeTypeString_ArrayGiven-3352384-43.patch"
-                },
+            },
             "drupal/libraries": {
                 "3367706 - after installing libraries module ReverseContainer::generateServiceIdHash()": "https://www.drupal.org/files/issues/2024-09-17/3367706-15.patch"
-                }
+            }
         }
     },
     "license": "GPL-2.0-or-later"
