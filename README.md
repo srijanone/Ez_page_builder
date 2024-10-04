@@ -1,5 +1,5 @@
 
-# drupal_recipe/ez_page_builder
+# srijanone/ez_page_builder
 
 Provides Landing Page Builder with components
 
@@ -19,7 +19,7 @@ composer config --no-plugins allow-plugins.cweagans/composer-patches true
 composer config --no-plugins allow-plugins.oomphinc/composer-installers-extender true
 composer require cweagans/composer-patches
 composer require drush/drush
-composer require drupal_recipe/ez_page_builder:dev-main
+composer require srijanone/ez_page_builder:dev-main
 mv recipes/ web
 composer install
 drush si
@@ -40,7 +40,7 @@ ddev composer config --no-plugins allow-plugins.cweagans/composer-patches true
 ddev composer config --no-plugins allow-plugins.oomphinc/composer-installers-extender true
 ddev composer require cweagans/composer-patches
 ddev composer require drush/drush
-ddev composer require drupal_recipe/ez_page_builder:dev-main
+ddev composer require srijanone/ez_page_builder:dev-main
 mv recipes/ web
 ddev composer install
 ddev drush si
