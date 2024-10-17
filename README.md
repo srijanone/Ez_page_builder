@@ -67,7 +67,7 @@ composer require srijanone/ez_page_builder:dev-main
 ```bash
 composer install
 drush si
-drush recipe recipes/ez_page_builder;     
+drush recipe recipes/contrib/ez_page_builder;     
 ```
 
 ### B. Create a new project using ddev
@@ -138,7 +138,7 @@ ddev composer require srijanone/ez_page_builder:dev-main
 ```bash
 ddev composer install
 ddev drush si
-ddev drush recipe recipes/ez_page_builder;     
+ddev drush recipe recipes/contrib/ez_page_builder;     
 ```
 
 ### C. Install the recipe in existing project
@@ -196,7 +196,7 @@ composer require srijanone/ez_page_builder:dev-main
 #### 10. Now run below commands to configure your site
 ```bash
 composer install
-drush recipe recipes/ez_page_builder;     
+drush recipe recipes/contrib/ez_page_builder;     
 ```
 
 ## Tech Stack
