@@ -36,6 +36,7 @@ install:
   - media_entity_twitter:media_entity_twitter
   - image_widget_crop:image_widget_crop
   - lb_direct_add:lb_direct_add
+  - layout_builder_modal
 
 config:
   import:
