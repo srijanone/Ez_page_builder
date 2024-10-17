@@ -1,6 +1,6 @@
 # srijanone/ez_page_builder
 
-Provides Landing Page Builder with components
+EzContent Page Builder: Empowers content creators, even with minimal technical knowledge, to design and publish engaging, SEO-friendly landing pages using Drupal's intuitive layout builder and rich component library. 
 
 
 ## Installation
