@@ -58,9 +58,9 @@ composer require wikimedia/composer-merge-plugin
 "merge-plugin": { "include": [ "web/modules/contrib/*/composer.libraries.json" ] } 
 ```
 
-#### 10. To require the dev-main branch of ez decoupled, execute this command
+#### 10. To require the dev-main branch of ez page builder, execute this command
 ```bash
-composer require srijanone/ez_page_builder:dev-main
+composer require srijanone/ez_page_builder:^1.0.1
 ```
 
 #### 11. Now run below commands to configure your site
@@ -129,9 +129,9 @@ ddev composer require wikimedia/composer-merge-plugin
 "merge-plugin": { "include": [ "web/modules/contrib/*/composer.libraries.json" ] } 
 ```
 
-#### 11. To require the dev-main branch of ez decoupled, execute this command
+#### 11. To require the dev-main branch of ez page builder, execute this command
 ```bash
-ddev composer require srijanone/ez_page_builder:dev-main
+ddev composer require srijanone/ez_page_builder:^1.0.1
 ```
 
 #### 12. Now run below commands to configure your site
@@ -188,9 +188,9 @@ composer require wikimedia/composer-merge-plugin
 "merge-plugin": { "include": [ "web/modules/contrib/*/composer.libraries.json" ] } 
 ```
 
-#### 9. To require the dev-main branch of ez decoupled, execute this command
+#### 9. To require the dev-main branch of ez page builder, execute this command
 ```bash
-composer require srijanone/ez_page_builder:dev-main
+composer require srijanone/ez_page_builder:^1.0.1
 ```
 
 #### 10. Now run below commands to configure your site
