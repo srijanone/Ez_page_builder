@@ -1,11 +1,11 @@
-# srijanone/ez_page_builder
+# drupal/ez_page_builder
 
-EzContent Page Builder: Empowers content creators, even with minimal technical knowledge, to design and publish engaging, SEO-friendly landing pages using Drupal's intuitive layout builder and rich component library. 
+EzContent Page Builder: Empowers content creators, even with minimal technical knowledge, to design and publish engaging, SEO-friendly landing pages using Drupal's intuitive layout builder and rich component library.
 
 
 ## Installation
 
-### A. Create a new project using composer 
+### A. Create a new project using composer
 
 #### 1. Firstly, To create a new project and navigate to the project directory, you need to execute the following commands:
 ```bash
@@ -50,24 +50,24 @@ composer require drush/drush
 ```
 #### 8. To merge the composer.libraries.json file into your main composer.json, install the Composer Merge Plugin. From the project directory, open a terminal and run
 ```bash
-composer require wikimedia/composer-merge-plugin 
+composer require wikimedia/composer-merge-plugin
 ```
 
 #### 9. Then Edit the composer.json file of your Drupal website, and under the "extra" section add this entry
 ```bash
-"merge-plugin": { "include": [ "web/modules/contrib/*/composer.libraries.json" ] } 
+"merge-plugin": { "include": [ "web/modules/contrib/*/composer.libraries.json" ] }
 ```
 
 #### 10. To require the dev-main branch of ez page builder, execute this command
 ```bash
-composer require srijanone/ez_page_builder:^1.0.1
+composer require drupal/ez_page_builder:^1.0.1
 ```
 
 #### 11. Now run below commands to configure your site
 ```bash
 composer install
 drush si
-drush recipe recipes/contrib/ez_page_builder;     
+drush recipe recipes/contrib/ez_page_builder;
 ```
 
 ### B. Create a new project using ddev
@@ -121,24 +121,24 @@ ddev composer require drush/drush
 ```
 #### 9. To merge the composer.libraries.json file into your main composer.json, install the Composer Merge Plugin. From the project directory, open a terminal and run
 ```bash
-ddev composer require wikimedia/composer-merge-plugin 
+ddev composer require wikimedia/composer-merge-plugin
 ```
 
 #### 10. Then Edit the composer.json file of your Drupal website, and under the "extra" section add this entry
 ```bash
-"merge-plugin": { "include": [ "web/modules/contrib/*/composer.libraries.json" ] } 
+"merge-plugin": { "include": [ "web/modules/contrib/*/composer.libraries.json" ] }
 ```
 
 #### 11. To require the dev-main branch of ez page builder, execute this command
 ```bash
-ddev composer require srijanone/ez_page_builder:^1.0.1
+ddev composer require drupal/ez_page_builder:^1.0.1
 ```
 
 #### 12. Now run below commands to configure your site
 ```bash
 ddev composer install
 ddev drush si
-ddev drush recipe recipes/contrib/ez_page_builder;     
+ddev drush recipe recipes/contrib/ez_page_builder;
 ```
 
 ### C. Install the recipe in existing project
@@ -180,23 +180,23 @@ composer require drush/drush
 ```
 #### 7. To merge the composer.libraries.json file into your main composer.json, install the Composer Merge Plugin. From the project directory, open a terminal and run
 ```bash
-composer require wikimedia/composer-merge-plugin 
+composer require wikimedia/composer-merge-plugin
 ```
 
 #### 8. Then Edit the composer.json file of your Drupal website, and under the "extra" section add this entry
 ```bash
-"merge-plugin": { "include": [ "web/modules/contrib/*/composer.libraries.json" ] } 
+"merge-plugin": { "include": [ "web/modules/contrib/*/composer.libraries.json" ] }
 ```
 
 #### 9. To require the dev-main branch of ez page builder, execute this command
 ```bash
-composer require srijanone/ez_page_builder:^1.0.1
+composer require drupal/ez_page_builder:^1.0.1
 ```
 
 #### 10. Now run below commands to configure your site
 ```bash
 composer install
-drush recipe recipes/contrib/ez_page_builder;     
+drush recipe recipes/contrib/ez_page_builder;
 ```
 
 ## Tech Stack

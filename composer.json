@@ -1,5 +1,5 @@
 {
-    "name": "srijanone/ez_page_builder",
+    "name": "drupal/ez_page_builder",
     "description": "Provides Landing Page Builder with components",
     "type": "drupal-recipe",
     "repositories": {
